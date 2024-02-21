@@ -1,3 +1,11 @@
 body{
+    box-sizing: border-box;
     background-color: #333;
+}
+
+.box{
+    width: 80px;
+    height: 80px;
+    background-color: purple;
+    border: 5px solid #fff;
 }

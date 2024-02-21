@@ -14,19 +14,8 @@ TOOLS
 */
 
 
-// # BONUS 
-// Inseriamo nel DOM un container ed attraverso la funzione append[()] un elemento html con il numero o la stringa corretta da mostrare
 
-// Creiamo la variabile per 'innerHTML'
-const mainElement = document.querySelector('main')
-console.log(mainElement);
-
-const markupContainer = `<div class="container.w.75.mx-auto"></div>`
-console.log(markupContainer);
-
-mainElement.innerHTML = markupContainer;
-
-
+const markupContainer = document.getElementById(container);
 //Creiamo il ciclo da 1 a 100 con incremento
 for (let i = 1; i <= 100; i++) {
 
@@ -48,16 +37,22 @@ for (let i = 1; i <= 100; i++) {
       console.log(i);
     }
 
+    console.log(i);
+    const markupBoxItem = `<div class="box">${i}</div>`;
+    console.log(markupBoxItem);
 
-  // Creiamo un nuovo elemento div
-  const div = document.createElement(div);
+    markupContainer.innerHTML += markupBoxItem;
 
-  const content = document.createTextNode(`${i}`);
-
-  div.appendChild(content);
-
-  container.appendChild(div);
 }
+// Creiamo un nuovo elemento div
+//     const div = document.createElement("div");
+ 
+//   //const content = document.createTextNode(`${i}`);
+//     div.innerText = i;
+
+//     document.getElementById(container).appendChild(div);
+
+
 
 
 
