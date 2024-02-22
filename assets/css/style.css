@@ -3,9 +3,20 @@ body{
     background-color: #333;
 }
 
-.box{
-    width: 80px;
-    height: 80px;
-    background-color: purple;
-    border: 5px solid #fff;
+.container{flex-wrap: wrap;
+    display: flex;
+    max-width: 960px;
+    margin: 2rem 0 2rem 0;
+
+    >div{
+        width: 80px;
+        height: 80px;
+        background-color: purple;
+        border: 5px solid #fff;
+        margin: 5px;
+        font-weight: bold;
+        color: #fff;
+        text-align: center;
+        line-height: 4;
+    }
 }
